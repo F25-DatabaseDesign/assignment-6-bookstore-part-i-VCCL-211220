@@ -21,25 +21,25 @@
     </section>
     <section id="catRight">
         <!-- Create a for loop that will iterate through the list of list of books -->
-         {% for book in selected_books %}
+         {% for i in selected_books %}
                 <div class='book'>
                     <!-- Insert the book image stored in the static folder and the book as the alt text -->
-                    <div><img src='book image' alt='book name'/></div>
+                    <div><img src="static/images/books/{{ i.image }}" alt="{{ book.title }}"/></div>
                     <div class='bookDetailBox'>
                         <!-- Insert the corresponding field into each of the following rows -->
-                        <p class='bookTitle'>title of the book</p>
-                        <p class='bookDetail'>by Author name</p>
-                        <p class='bookDetail'>ISBN: number</p>
-                        <p class='bookPrice'>$cost</p>
+                        <p class='bookTitle'> {{ i.title }}</p>
+                        <p class='bookDetail'>by {{ i.author }}</p>
+                        <p class='bookDetail'>ISBN: {{ i.isbn }}</p>
+                        <p class='bookPrice'>$ {{ i.price }}</p>
                             <a class='actionButton' href='#'>Add to cart</a>
                         <!-- Insert an if statement such that if the ReadNow flag is set include the Read Now button-->
-                            {% if statement goes in here%}
+                            {% if i.readNow == 1%}
                                 <a class='actionButton' href='#'>Read Now</a>
                             {% endif %}
                     </div>
                 </div>
 		<!-- This is where the for loop code ends -->
-
+		{% endfor %}
     </section>
 </main>
 {% endblock %}
