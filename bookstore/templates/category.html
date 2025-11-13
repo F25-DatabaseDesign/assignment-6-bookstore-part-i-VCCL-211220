@@ -4,25 +4,24 @@
 <main>
     <section id="catLeft">
         <!-- Create a for loop that will iterate through the list of categories -->
-
+		 {% for category in categories %}
             <!-- Insert an if statement to check if the selectedCategory parameter is the same as the categoryId> -->
-
+			{% if category.categoryId == selected_category_id %}
                 <!-- If so, create a p element displaying the category name
 				     Use class='selectedCategory' to style the category
-                -->
+                --> <p class="selectedCategory">{{ category.categoryName }}</p>
 
 				{% else %}
-                
 				<!-- Otherwise, create a p element containing a link to category HTML, containing the 
 					 corresponding categoryId as a parameter and displaying the category name.
 					 use class='notSelectedCategory' to style the category 
-                -->
+                --><p class="notSelectedCategory"><a href="/category?id={{ category.categoryId }}">{{ category.categoryName }}</a></p>
 
 
     </section>
     <section id="catRight">
         <!-- Create a for loop that will iterate through the list of list of books -->
-        
+         {% for book in selected_books %}
                 <div class='book'>
                     <!-- Insert the book image stored in the static folder and the book as the alt text -->
                     <div><img src='book image' alt='book name'/></div>
