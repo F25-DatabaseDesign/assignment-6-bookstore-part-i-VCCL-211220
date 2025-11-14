@@ -35,7 +35,7 @@ books = [
         "author": "Harper Lee",
         "isbn": "978-0000000001",
         "price": 14.99,
-        "image": "classic 1.jpg",
+        "image": "classic_1.jpg",
         "readNow": 1
     },
     {
@@ -45,7 +45,7 @@ books = [
         "author": "Jane Austen",
         "isbn": "978-0000000002",
         "price": 12.99,
-        "image": "classic 2.jpg",
+        "image": "classic_2.jpg",
         "readNow": 0
     },
     {
@@ -55,7 +55,7 @@ books = [
         "author": "L. Frank Baum",
         "isbn": "978-0000000003",
         "price": 10.99,
-        "image": "classic 3.png",
+        "image": "classic_3.jpg",
         "readNow": 1
     },
     {
@@ -65,7 +65,7 @@ books = [
         "author": "F. Scott Fitzgerald",
         "isbn": "978-0000000004",
         "price": 11.99,
-        "image": "classic 4.jpg",
+        "image": "classic_4.jpg",
         "readNow": 0
     },
 
@@ -76,7 +76,7 @@ books = [
         "author": "Rick Riordan",
         "isbn": "978-0000000005",
         "price": 13.99,
-        "image": "children 1.jpg",
+        "image": "children_1.jpg",
         "readNow": 1
     },
     {
@@ -86,7 +86,7 @@ books = [
         "author": "J.K. Rowling",
         "isbn": "978-0000000006",
         "price": 15.99,
-        "image": "children 2.jpg",
+        "image": "children_2.jpg",
         "readNow": 0
     },
     {
@@ -96,7 +96,7 @@ books = [
         "author": "Erin Hunter",
         "isbn": "978-0000000007",
         "price": 9.99,
-        "image": "children 3.jpg",
+        "image": "children_3.jpg",
         "readNow": 1
     },
     {
@@ -106,7 +106,7 @@ books = [
         "author": "E. B. White",
         "isbn": "978-0000000008",
         "price": 8.99,
-        "image": "chilren 4.jpg",
+        "image": "chilren_4.jpg",
         "readNow": 0
     },
 
@@ -117,7 +117,7 @@ books = [
         "author": "Frank Herbert",
         "isbn": "978-0000000009",
         "price": 16.99,
-        "image": "sci fi 1.jpg",
+        "image": "sci_fi_1.jpg",
         "readNow": 1
     },
     {
@@ -127,7 +127,7 @@ books = [
         "author": "Ray Bradbury",
         "isbn": "978-0000000010",
         "price": 12.49,
-        "image": "sci fi 2.jpg",
+        "image": "sci_fi_2.jpg",
         "readNow": 0
     },
     {
@@ -137,7 +137,7 @@ books = [
         "author": "Andy Weir",
         "isbn": "978-0000000011",
         "price": 13.50,
-        "image": "sci fi 3.jpg",
+        "image": "sci_fi_3.jpg",
         "readNow": 1
     },
     {
@@ -147,7 +147,7 @@ books = [
         "author": "George Orwell",
         "isbn": "978-0000000012",
         "price": 10.50,
-        "image": "sci fi 4.jpg",
+        "image": "sci_fi_4.jpg",
         "readNow": 0
     },
 
@@ -158,7 +158,7 @@ books = [
         "author": "Stan Lee",
         "isbn": "978-0000000013",
         "price": 11.49,
-        "image": "comic 1.jpg",
+        "image": "comic_1.jpg",
         "readNow": 1
     },
     {
@@ -168,7 +168,7 @@ books = [
         "author": "Bob Kane",
         "isbn": "978-0000000014",
         "price": 12.29,
-        "image": "comic 2.png",
+        "image": "comic_2.jpg",
         "readNow": 0
     },
     {
@@ -178,7 +178,7 @@ books = [
         "author": "Stan Lee",
         "isbn": "978-0000000015",
         "price": 10.99,
-        "image": "comic 3.jpg",
+        "image": "comic_3.jpg",
         "readNow": 1
     },
     {
@@ -188,7 +188,7 @@ books = [
         "author": "Jerry Siegel",
         "isbn": "978-0000000016",
         "price": 9.49,
-        "image": "comic 4.jpg",
+        "image": "comic_4.jpg",
         "readNow": 0
     }
 ]
