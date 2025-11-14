@@ -11,8 +11,8 @@
     <header>
       <div id="leftHeader">
         <a href="{{ url_for('home')}}">
-          <img src="static/images/misc/bookstore logo.png" alt="Bookstore For Everyone Logo">
-
+          <img src="{{ url_for('static', filename='images/misc/bookstore_logo.jpg') }}"
+               alt="Bookstore For Everyone Logo">
         </a>
       </div>
       <div id="midHeader">
@@ -29,14 +29,14 @@
                    The category name should be what is displayed
                    The general format should be
                    <p><a href="url with category Id parameter">category name</a></p>          -->
-                <p><a href="/category?id={{ category.categoryId }}">{{ category.categoryName }}</a></p>
+                <p><a href="{{ url_for('category', id=category.categoryId) }}">{{ category.categoryName }}</a></p>
               {%endfor%}
             </div>
         </div>
       </div>
       <div id="rightHeader">
         <div id="cartIcon"><a href="#">
-                <img src="static/images/misc/cart-icon.jpg" alt="shopping cart icon"></a>
+                <img src="{{ url_for('static', filename='images/misc/cart-icon.jpg') }}" alt="shopping cart icon"></a>
         </div>
         <div id='cartCount'>1 item</div>
         <div class='loginButton'><a href='#'>login</a></div>
@@ -52,8 +52,8 @@
         <a href="#">Directions</a>
     </div>
     <div id="footerRight">
-        <a href="#"><img src ="static/images/misc/facebook-icon.jpg" alt="Facebook"></a>
-        <a href="#"><img src ="static/images/misc/twitter-icon.jpg" alt ="Twitter"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/misc/facebook-icon.jpg') }}" alt="Facebook"></a>
+        <a href="#"><img src="{{ url_for('static', filename='images/misc/twitter-icon.jpg') }}" alt="Twitter"></a>
     </div>
   </footer>
   </body>
